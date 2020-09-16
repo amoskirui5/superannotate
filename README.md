@@ -57,12 +57,12 @@ After successfully installing and creating your projects and classes, use the ed
 
 - **[Desktop and web editor tutorials](https://www.youtube.com/channel/UCmwDrqxvNiTmnNOKl-m0GjA/playlists?view_as=subscriber)**
 - **[Advanced editor features](https://www.youtube.com/watch?v=_wFYtQY3v14&feature=youtu.be)**
-- **[Note from our co-founder](https://www.youtube.com/watch?v=_wFYtQY3v14&feature=youtu.be)**
+- **[Lunch announcement](https://blog.superannotate.com/superannotate-desktop-a-better-alternative-to-free-annotation-tools)**
 
 
 ## SDK and Annotation Upload
 
-Even if you have a large amount of annotated data in other tools or platforms, you can still upload your annotations to SuperAnnotate Desktop and perform a quality check. Using the editor filters (learn more here, section 3.4), one can search and edit all the objects with a certain class which can be essential for checking and correcting your algorithm’s prediction accuracy or the annotation quality. 
+Even if you have a large amount of annotated data in other tools or platforms, you can still upload your annotations to SuperAnnotate Desktop and perform a quality check. Using the editor filters (learn more [here](https://blog.superannotate.com/superannotate-desktop-a-better-alternative-to-free-annotation-tools), Section 3), one can search and edit all the objects with a certain class which can be essential for checking and correcting your algorithm’s prediction accuracy or the annotation quality. 
 You can transfer your annotation from other open-source tools and paid platforms. For the conversion, you can use our Python SDK which provides all the conversion scripts to make an easy transition. Here is an example:
 
 Run this commands to install SDK and important repositories
@@ -95,8 +95,8 @@ The SDK supports the conversion of the following formats from SuperAnotate (SA) 
 | [Cityscapes](https://www.cityscapes-dataset.com/) | Coming soon | |
 | [LabelMe](http://labelme.csail.mit.edu/Release3.0/) | Coming soon | |
 | [YOLO darknet](https://pjreddie.com/darknet/) | Coming soon | |
-| [SageMaker(https://aws.amazon.com/sagemaker/) | Coming soon | |
-| [Google Cloud](https://cloud.google.com/products/ai) | Coming soon | |
+| [AWS SageMaker](https://aws.amazon.com/sagemaker/) | Coming soon | |
+| [Google Cloud AutoML](https://cloud.google.com/vision/automl/docs) | Coming soon | |
 | [VoTT](https://github.com/microsoft/VoTT) | Coming soon | |
 | [VGG](http://www.robots.ox.ac.uk/~vgg/software/via/) | Coming soon | |
 
@@ -290,10 +290,10 @@ Some text description
 
 - **[Python SDK Documentation](https://superannotate.readthedocs.io/en/latest/index.html)**
 - **[Detecting Mislabeled Annotations with Superannotate](https://github.com/superannotateai/qa-automation)**
-- **[Speed up image labeling using transfer learning (no code required)](https://preview.hs-sites.com/_hcms/preview/content/34341777004?portalId=7839526&_preview=true&from_buffer=false&preview_key=nvRsDITN)**
-- **[How to efficiently manage work-from-home annotation service teams?](https://preview.hs-sites.com/_hcms/preview/content/32749893905?portalId=7839526&_preview=true&from_buffer=false&preview_key=FEScanUB)**
+- **[Speed up image labeling using transfer learning (no code required)](https://blog.superannotate.com/speed-up-labeling-process-using-transfer-learning)**
+- **[How to efficiently manage work-from-home annotation service teams?](https://blog.superannotate.com/ai-annotation-during-covid-19)**
 - **[Active Learning using SuperAnnotate?](https://github.com/superannotateai/active_learning)**
-- **[Why Pixel Precision is the future of Image Annotate](https://preview.hs-sites.com/_hcms/preview/content/32755252325?portalId=7839526&_preview=true&from_buffer=false&preview_key=pYewthTQ)**
+- **[Why Pixel Precision is the future of Image Annotate](https://blog.superannotate.com/why-pixel-precision-is-the-future-of-the-image-annotation)**
 - **[Full Documentation for SuperAnnotate Web](https://superannotate.com/documentation)**
 
 
