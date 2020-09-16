@@ -15,7 +15,7 @@ SuperAnnotate Desktop is the fastest image and video annotation software. It was
 
 ## Download and Installation Guide
 
-Your image annotation software is one click away! Click [here](https://www.superannotate.com/download) to download the installer package on Mac, Windows or Linux. Install the package by simply double-clicking on it and follow the installation steps.
+Your image annotation software is one click away! Click [here](https://superannotate.com/download/?utm_source=github&utm_medium=article&utm_campaign=SuperAnnotate_Desktop_Launch) to download the installer package on Mac, Windows or Linux. Install the package by simply double-clicking on it and follow the installation steps.
 
 
 
