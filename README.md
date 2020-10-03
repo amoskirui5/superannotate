@@ -53,7 +53,7 @@ You can set up classes directly from the labeling panel in the editor by either 
 **Open an existing object**
 
 Alternatively, you can open an existing project by choosing the path to your project file.
-![Image4](images/image5.gif)
+![Image4](images/images5.gif)
 
 
 **Labeling and the editor**
