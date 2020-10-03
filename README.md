@@ -51,8 +51,9 @@ Once installed, you are all set to start your first project. To create a project
 You can set up classes directly from the labeling panel in the editor by either uploading the classes.json file or manually creating the class ontology. 
 
 **Open an existing object**
+
 Alternatively, you can open an existing project by choosing the path to your project file.
-![Image4](images/image3.gif)
+![Image4](images/image5.gif)
 
 
 **Labeling and the editor**
