@@ -1,305 +1,503 @@
 # SuperAnnotate Desktop
-SuperAnnotate Desktop is the fastest image and video annotation software. It was built based on SuperAnnotate's web platform which is designed based on feedback from thousands of annotators that have spent hundreds of thousands of hours on labeling. The tool allows computer vision engineers or small annotation teams to quickly annotate images/videos, as well as it provides efficient features to explore already labeled datasets. 
+## Overview
+SuperAnnotate Desktop is the fastest image annotation automation software that allows computer vision engineers to train data fast with top-notch quality and accuracy. It is based on SuperAnnotate’s [web platform](https://app.superannotate.com/login), and is available on Windows, MacOs, and Linux. Download SuperAnnotate Desktop [here](https://superannotate.com/download/).  
+## Quickstart
+SuperAnnotate Desktop is available on Windows, MacOs, and Linux. Click [here](https://superannotate.com/download/) to download.
+## What can I do with SuperAnnotate Desktop?
+You can create high-quality training datasets and annotations for computer vision tasks.
+## What problem does it solve?
+SuperAnnotate Desktop accelerates data training by at least three times, without compromising the annotation quality. 
+## Who is it for?
+SuperAnnotate Desktop is ideal for individual researchers and small annotation teams that aim to perform simple computer vision tasks. Use SuperAnnotate’s [b platform](https://app.superannotate.com/) to complete complex tasks, manage large teams, and view project analytics.
+## How can I upgrade?
+SuperAnnotate’s [web platform](https://app.superannotate.com/) allows you to create high-quality annotations for top-performing computer vision models regardless of team and project size. It also allows you to set up projects and distribute tasks automatically, use neural networks to automate the annotation process, and integrate your computer vision pipeline using Python SDK. [Contact us](https://www.superannotate.com/contacts) to upgrade. 
+# Project
+## Create project
+![Createaproject](images/IMG1.png)
+1. Go to the homepage, and select **New project**. 
+2. Enter a project name, choose the folder where you want to store your project’s data
+3. Import your images. You can either drag and drop your images, or choose them from your files. 
+4. When you’re done, select **Create**.
+## Open project
+![Openaproject](images/IMG3.png)
+You can work on existing projects in SuperAnnotate. Go to the homepage, click **Open project** in the bottom left corner, and select your project from your computer. 
+## Export project
+To export a project:
 
-![Image1](images/image3.jpg)
+1. Go to the homepage and click on the corresponding download icon. 
+2. Choose if you want to include images or annotations or both in your download. Note that you cannot download your project if you don’t check at least one box. 
+3. When you’re done, select **Export**.
+4. Choose the folder name and destination.
+5. Select **Export**.
 
-- [Download and Installation Guide](#download-and-installation-guide)
-- [Introduction](#introduction)
-- [Project Set up](#project-set-up)
-- [SDK and Annotation Upload](#sdk-and-annotation-upload)
-- [Export](#export)
-- [Relevant Posts and Reading Materials](#relevant-posts-and-reading-materials)
+Your JSON files and images will be saved in the same ZIP folder.
+## Remove project
+![Removeaproject](images/IMG4.png)
+To remove a project from the list, go to the homepage, hover over the project you want to remove, and select **X**.
 
+:bulb: Removing a project from the list **does not** delete it from your computer. To open a project that you removed from the list, click **Open project** and select your project from your computer.
+# Editor
+![Editor](images/IMG6.png)
+## Annotations
+### Annotate
+Use these tools to annotate your projects. Choose the tool depending on the shape of the object you want to annotate.
+* Points
+* Polyline
+* Polygon
+* Bounding box
+* Ellipse
+* Cuboid
 
+:bulb: Use the ruler as a guide while annotating, and zoom in on the object for better annotation results.
 
+:bulb: SuperAnnotate automatically saves your progress.
+### Adjust annotation
+Press **Esc** to delete the last point you added to your polygon and polyline.
+### Delete annotation
+**Method 1:** Select the annotation and press the backspace key or **Del** (Windows). 
+**Method 2:** Find the annotation in the right panel and click on the corresponding **X** button.
+To delete all the annotations from the image you’re working on, select **Revert** (trash icon) in the bottom panel or press **Ctrl+Shift+R** and confirm your action.
 
-## Download and Installation Guide
+:bulb: Select :question: to get access to keyboard shortcuts. 
+# Classes
+## Create a class
+**Method 1:**
+1. Select **Add a class** in the right panel. 
+2. Enter a name and choose a color.
+3. Add an attribute group (optional).
+To add an attribute group:
+1. Select **New attribute group**.
+2. Enter an attribute group name.
+3. Enter an attribute and select **+**. You can add multiple attribute groups and attributes.
+5. Check **Allow multiple selection** if the attributes can exist within an object simultaneously. When you do that, you’ll be able to assign multiple attributes to an object. For example, if your annotated object is a black and orange car, choose both black and orange from the attribute group. Do not check **Allow multiple selection** if the attributes can’t exist simultaneously. For example, a dog can’t be small and medium at the same time. 
+**Method 2:**
+1. Right-click on the instance.
+2. Open the drop-down menu and select **Create new class**.
+3. Enter a name and choose a color.
+## Assign class
+Use one of these methods to assign a class to an instance:
+**Method 1:** Right-click on an instance and choose a class from the drop-down menu.
+**Method 2:** Select an instance, find it in the right panel, and choose a class from the drop-down menu.
+**Method 3:** Select the **Eyedropper** tool, click on an object to sample its class. The **Eyedropper** tool will change into the **Bucket** tool. Next, select your unassigned object(s). The **Eyedropper** tool facilitates the class assignment of multiple objects.
 
-Your image annotation software is one click away! Click [here](https://superannotate.com/download/?utm_source=github&utm_medium=article&utm_campaign=SuperAnnotate_Desktop_Launch) to download the installer package on Mac, Windows or Linux. Install the package by simply double-clicking on it and follow the installation steps.
+Alternatively, you can assign a class to your object before annotating it. Follow these steps: 
+1. Select the class selection tool in the left panel.
+2. Choose a class. 
+3. Annotate your object using any tool you want. 
 
-
-
-## Introduction
-
-- **Welcome to SuperAnnotate**
-
-	SuperAnnotate provides a free annotation software that is built to accommodate a vast range of annotation tasks: from object detection, instance and semantic segmentation, keypoint annotation, cuboid annotation to video tracking. SuperAnnotate will allow you to go through your annotation project effortlessly in the most efficient manner.  
-
-- **What problem does it solve?**
-	
-    SuperAnnotate allows you to create high-quality training datasets for various computer vision tasks. It accelerates the cycle of training data creation by at least three times, without compromising the annotation quality. It also provides the opportunity to explore annotated datasets and allows you to filter and correct the annotations based on your needs. 
-    
-- **What is it good for?**
-
-	The software is ideal for individual researchers and small annotation teams who aim to accomplish simple computer vision tasks. Completing more complex tasks and managing large teams can be done using [SuperAnnotate’s web platform](https://www.superannotate.com/)
-
-- **How to level up**
-
-	Regardless of team and project size, [SuperAnnotate’s web platform](https://www.superannotate.com/) provides uniform and consistent results, allowing you to manage large teams and follow their progress. You can also automate the annotation progress using neural networks and integrate your computer vision pipeline using Python SDK . Submit the form [here](https://www.superannotate.com/contacts) to level up.
-
-
-## Project set up
-
-**Create project and set up classes**
-
-![Image2](images/image1.png)
-
-Once installed, you are all set to start your first project. To create a project, give it a name, choose a project directory, and then upload the images you want to annotate. You can also start a new project by choosing the directory of the previous annotated projects. 
-
-![Image3](images/image2.gif)
-
-You can set up classes directly from the labeling panel in the editor by either uploading the classes.json file or manually creating the class ontology. 
-
-**Open an existing object**
-
-Alternatively, you can open an existing project by choosing the path to your project file.
-![Image4](images/images5.gif)
-
-
-**Labeling and the editor**
-
-After successfully installing and creating your projects and classes, use the editor to annotate the images. Please check the following links to become familiar with the editor.
-
-- **[Desktop and web editor tutorials](https://www.youtube.com/channel/UCmwDrqxvNiTmnNOKl-m0GjA/playlists?view_as=subscriber)**
-- **[Advanced editor features](https://www.youtube.com/watch?v=_wFYtQY3v14&feature=youtu.be)**
-- **[Lunch announcement](https://blog.superannotate.com/superannotate-desktop-a-better-alternative-to-free-annotation-tools)**
-
-
-## SDK and Annotation Upload
-
-Even if you have a large amount of annotated data in other tools or platforms, you can still upload your annotations to SuperAnnotate Desktop and perform a quality check. Using the editor filters (learn more [here](https://blog.superannotate.com/superannotate-desktop-a-better-alternative-to-free-annotation-tools), Section 3), one can search and edit all the objects with a certain class which can be essential for checking and correcting your algorithm’s prediction accuracy or the annotation quality. 
-You can transfer your annotation from other open-source tools and paid platforms. For the conversion, you can use our Python SDK which provides all the conversion scripts to make an easy transition. Here is an example:
-
-Run this commands to install SDK and important repositories
-
-	pip install superannotate
-	pip install 'git+https://github.com/cocodataset/panopticapi.git'
-	pip install 'git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI'
-
-Now you can use this script to convert your data to SuperAnnotate format
-
-```python
-import superannotate as sa
-sa.import_annotation_format("<input_dir>", "<output_dir>", "<dataset_format>",
-			    "<dataset_name>", "<project_type>", "<task>", "<platform>")
+Your instance will be immediately assigned to the class you’ve chosen.
+## Change class
+You can change a class in two ways:
+**Method 1:** Right-click on your object and choose a class from the drop-down menu.
+**Method 2:** Select your object, find it in the right panel, select the ellipsis button, and move your object to a different existing class.
+# Objects
+## Copy objects
+You can copy instances as well as their assigned classes and attributes in one image or to other images:
+1. Select the instance, and click **Copy** in the top panel, or press **Ctrl+C**.
+2. Click **Paste** in the top panel or press **Ctrl+V**.
+## Group objects
+In some cases, you might need to use more than one tool to annotate a single object. To let the system know that several instances belong together, you need to group them. 
+1. Select an instance, and press and hold the **Ctrl** key.
+2. While holding the Ctrl key, click on the instances you want to select.
+3. Select **Group** in the top panel.
+If you think you’ve made a mistake, select **Ungroup** or press **Ctrl+Shift+G** and start over.
+## Show/Hide objects
+Select the eye button in the top panel or press **R** to show or hide the instances.
+# Images
+## Upload images
+To upload an image, select **Upload** in the bottom panel, and choose **Image**. Next, select images from your computer and click **Open**.
+## Delete images
+To delete an image, hover over the information icon in the image panel and select the trash icon.
+## Set image status
+An image can have one of the following statuses:
+* Not started
+* In progress
+* Complete
+To set an image as **Complete**, select **Complete** at the bottom of the right panel. Note that you should classify all the instances to be able to set an image as **Complete**.
+To see the status of an image, go to the image panel and hover over the icon on the right. 
+## Add tags
+1. Select **Tags** in the left panel.
+2. Enter a tag in the text box.
+3. Click the **+** button.
+4. Select **Save**.
+## Adjust settings
+Adjust the settings of your image by dragging the slider to the left or to the right:
+* Brightness
+* Fill (instance transparency)
+* Contrast
+## Show labels
+Select **Show/Hide labels** in the top panel to see the following labels on your image:
+* Classes
+* Attributes
+* Points 
+* Groups
+You can also expand an instance in the right panel to see its attributes and point labels.
+# Import & Export
+## Format
+The explanation will be based on this image:
+![Example](images/IMG7.png)
+Each image has a corresponding JSON file with the following file name [IMAGE_NAME].json. 
+The JSON file contains three main fields:
+'''json
+{
+    "metadata": {},
+    "tags": [],
+    "instances": []
+}
+'''
+### Metadata
+'''json
+{
+    "version": "1.0.0",
+    "name": "Untitled design (1).png",
+    "status": "In progress"
+}
+'''
+**Description:**
+* “version”: JSON version
+* “name”: Image name
+* “status”: Image status
+### Tags
+'''json
+[
+    "Shapes",
+    "Figures"
+]
+'''
+**Description:**
+* “Shapes”: Tag name.
+* “Figures”: Tag name.
+### Instances
+#### Bounding box
+```json
+{
+      "type": "bbox",
+      "classId": 6,
+      "className": "Bounding box",
+      "probability": 100,
+      "points": {
+        "x1": 83.9,
+        "x2": 531.7,
+        "y1": 81.5,
+        "y2": 380.7
+      },
+      "groupId": 0,
+      "pointLabels": {},
+      "locked": false,
+      "visible": true,
+      "attributes": [
+        {
+          "id": 15,
+          "groupId": 5,
+          "groupName": "Color",
+          "name": "Yellow"
+        }
+      ]
+    }
 ```
+**Description:**
+* “type” : The dictionary is a bounding box.
+* “classId” : int - Class ID (one of the class IDs in“classes.json”)
+* "className" : - Class name
+* “probability” : float - Bounding box prediction. If the annotator created the bounding box, then the probability value is 100.
+* “points” : list - Points of the bounding box. The list of floats is: "x1, y1" for the left upper corner, and "x2, y2" for the right lower corner.
+* “groupId” : int - Group ID of instances
+* “pointLabels” : dict - The keys are from “0” to “3” for the 4 vertices of the bounding box.
+* “locked” : bool - If it’s true, you won’t be able to move the object on the canvas.
+* “visible” : bool - If it’s true, you’ll be able to see the annotations on the canvas.
+* “attributes” : list_of_dicts - List of attributes for this bounding box.
+	* “id” : int - Attribute ID (must be in “classes.json”)
+	* “groupId” : int - Group ID (must be in “classes.json”)
+	* "name" : str - Attribute name
+	* "groupName" : str - Group name
+#### Polygon
+```json
+{
+      "type": "polygon",
+      "classId": 6,
+      "className":"Polygon",
+      "probability": 100,
+      "points": [
+        908.2999877929687,
+        649.7999877929687,
+        929.9,
+        589.5,
+        1278.6,
+        565.8,
+        992.3,
+        994.1,
+        727.5,
+        929.5,
+        964.3,
+        856.4,
+        794.3,
+        632.6
+      ],
+      "groupId": 0,
+      "pointLabels": {},
+      "locked": false,
+      "visible": true,
+      "attributes": [
+        {
+          "id": 6,
+          "groupId": 6,
+          "groupName": "Color",
+          "name": "Pink"
+        }
+      ]
+    }
+```
+**Description:**
+* “type” : The dictionary is a polygon.
+* “classId” : int - Class ID (one of the class IDs in“classes.json”)
+* "className" : - Class name
+* “probability” : float - Bounding box prediction. If the annotator created the bounding box, then the probability value is 100.
+* “points” : list - Points of the bounding box. The list of floats is: "x1, y1" for the left upper corner, and "x2, y2" for the right lower corner.
+* “groupId” : int - Group ID of instances
+* “pointLabels” : dict - The keys are from “0” to “3” for the 4 vertices of the bounding box.
+* “locked” : bool - If it’s true, you won’t be able to move the object on the canvas.
+* “visible” : bool - If it’s true, you’ll be able to see the annotations on the canvas.
+* “attributes” : list_of_dicts - List of attributes for this bounding box.
+	* “id” : int - Attribute ID (must be in “classes.json”)
+	* “groupId” : int - Group ID (must be in “classes.json”)
+	* "name" : str - Attribute name
+	* "groupName" : str - Group name
+Point
+```json
+{
+      "type": "point",
+      "classId": 11,
+      "className": "Point",
+      "probability": 100,
+      "x": 1612.2,
+      "y": 275.2,
+      "groupId": 0,
+      "pointLabels": {},
+      "locked": false,
+      "visible": true,
+      "attributes": [
+        {
+          "id": 20,
+          "groupId": 12,
+          "groupName": "Color",
+          "name": "Purple"
+        }
+      ]
+    }
+```
+**Description**
+* “type” : The dictionary is a point.
+* “classId” : int - Class ID (one of the class IDs in“classes.json”)
+* "className" : - Class name
+* “groupId” : int - Group ID of instances
+* “locked” : bool - If it’s true, you won’t be able to move the object on the canvas.
+* “pointLabels” : dict - The keys are from “0” to “3” for the 4 vertices of the bounding box.
+* “points” : list - Points of the bounding box. The list of floats is: "x1, y1" for the left upper corner, and "x2, y2" for the right lower corner.
+* “probability” : float - Bounding box prediction. If the annotator created the bounding box, then the probability value is 100.
+* “visible” : bool - If it’s true, you’ll be able to see the annotations on the canvas.
+* “attributes” : list_of_dicts - List of attributes for this bounding box.
+	* “id” : int - Attribute ID (must be in “classes.json”)
+	* “groupId” : int - Group ID (must be in “classes.json”)
+	* "name" : str - Attribute name
+	* "groupName" : str - Group name
+#### Polyline
+```json
+ {
+      "type": "polyline",
+      "classId": 8,
+      "className": "Polyline",
+      "probability": 100,
+      "points": [
+        187.2,
+        746.7,
+        617.7,
+        570.2,
+        464.9,
+        1050.2,
+        309.9,
+        989.9
+      ],
+      "groupId": 0,
+      "pointLabels": {},
+      "locked": false,
+      "visible": true,
+      "attributes": [
+        {
+          "id": 17,
+          "groupId": 8,
+          "groupName": "Color",
+          "name": "Blue"
+        }
+      ]
+    }
+```
+**Description:**
+* “type” : The dictionary is a polyline.
+* “classId” : int - Class ID (one of the class IDs in“classes.json”)
+* "className" : - Class name
+* “probability” : float - Bounding box prediction. If the annotator created the bounding box, then the probability value is 100.
+* “points” : list - Points of the bounding box. The list of floats is: "x1, y1" for the left upper corner, and "x2, y2" for the right lower corner.
+* “groupId” : int - Group ID of instances
+* “pointLabels” : dict - The keys are from “0” to “3” for the 4 vertices of the bounding box.
+* “locked” : bool - If it’s true, you won’t be able to move the object on the canvas.
+* “visible” : bool - If it’s true, you’ll be able to see the annotations on the canvas.
+* “attributes” : list_of_dicts - List of attributes for this bounding box.
+	* “id” : int - Attribute ID (must be in “classes.json”)
+	* “groupId” : int - Group ID (must be in “classes.json”)
+	* "name" : str - Attribute name
+	* "groupName" : str - Group name
+#### Ellipse
+```json
+{
+      "type": "ellipse",
+      "classId": 7,
+      "className": "Ellipse",
+      "probability": 100,
+      "cx": 1041.8,
+      "cy": 264.5,
+      "rx": 275.5,
+      "ry": 213.1,
+      "angle": 0,
+      "groupId": 0,
+      "pointLabels": {},
+      "locked": false,
+      "visible": true,
+      "attributes": [
+        {
+          "id": 16,
+          "groupId": 6,
+          "groupName": "Color",
+          "name": "Green"
+        }
+      ]
+    }
+```    
+**Description:**
+* “type” : “ellipse” - The dictionary is an ellipse.
+* “classId” : int - Class ID (one of the class IDs in the “classes.json”)
+* "className" : - Class name
+* “probability” : float - Ellipse prediction. If the annotator created the ellipse, then the probability value is 100.
+* “cx” - x-coordinate of the center
+* “cy” - y-coordinate of the center
+* “rx” - x radius
+* “ry” - y radius
+* "angle” - rotation angle
+* “groupId” : int - Group ID of instances
+* “pointLabels” : dict - The keys are numbers that range from 0 to 8, and the values are texts.
+* “locked” : bool - If it’s true, you won’t be able to move the object on the canvas.
+* “visible” : bool - If it’s true, you’ll be able to see the annotations on the canvas.
+* “attributes” : list_of_dicts - List of attributes for this polygon.
+	* “id” : int - Attribute ID (must be in “classes.json”)
+	* “groupId” : int - Group ID (must be in “classes.json”)
+	* "name" : str - Attribute name
+	* "groupName" : str - Group name
+#### Cuboid
+```json
+{
+      "type": "cuboid",
+      "classId": 10,
+      "className": "Cuboid",
+      "probability": 100,
+      "points": {
+        "f1": {
+          "x": 1366.8,
+          "y": 585.2
+        },
+        "f2": {
+          "x": 1648.8,
+          "y": 865
+        },
+        "r1": {
+          "x": 1558.4,
+          "y": 649.8
+        },
+        "r2": {
+          "x": 1853.3,
+          "y": 1026.5
+        }
+      },
+      "groupId": 0,
+      "pointLabels": {},
+      "locked": false,
+      "visible": true,
+      "attributes": [
+        {
+          "id": 19,
+          "groupId": 11,
+          "groupName": "Color",
+          "name": "Red"
+        }
+      ]
+    }
+ ```
+**Description:**
+* “type” : “cuboid” - The dictionary is a cuboid.
+* “classId” : int - Class ID (one of the class IDs in “classes.json”)
+* "className" : - Class name
+* “probability” : float - Cuboid prediction. If the annotator created the cuboid, then the probability value is 100.
+* “points”: - “f1” and “f2” are front box points with “x” and “y” coordinates, and “r1” and “r2” are rear box points with “x” and “y” coordinates.
+* “groupId” : int - Group ID of instances
+* “pointLabels” : dict - The keys are numbers that range from 0 to 8, and the values are texts.
+* “locked” : bool - If it’s true, you won’t be able to move the object on the canvas.
+* “visible” : bool - If it’s true, you’ll be able to see the annotations on the canvas.
+* “attributes” : list_of_dicts - List of attributes for this cuboid.
+	* “id” : int - Attribute ID (must be in “classes.json”)
+	* “groupId” : int - Group ID (must be in “classes.json”)
+	* "name" : str - Attribute name
+	* "groupName" : str - Group name
+#### Class
+```json
+ {
+    "attribute_groups": [
+      {
+        "id": 5,
+        "name": "Color",
+        "is_multiselect": false,
+        "attributes": [
+          {
+            "id": 15,
+            "name": "Yellow"
+          }
+        ],
+        "opened": true,
+        "hasChanges": true
+      }
+    ],
+    "color": "#fffb00",
+    "id": 6,
+    "name": "Bounding box",
+    "opened": true
+  }
+```  
+**Description:**
+* “attribute_groups”: - List of all the attributes.
+	* “id”: - Group ID
+	* “name”: - Attribute name
+	* “is_multiselect”: - It’s either true or false. It’s true if you can select multiple attributes, and it’s false if you can choose only one attribute.
+	* “attributes” - List of attribute values.
+		* “id”: - Attribute ID.
+		* “name”: - Attribute name.
+* “color”: - Class color.
+* “Id”: Class ID.
+* “Name”: Class name.
+## Import
+### Images
+Import images when creating a project or add them later.
+### Annotations
+To import existing annotations to your project, select **Upload** in the bottom panel and choose **Annotation**. Next, choose a JSON file from your computer, and select **Open**.
 
-Once you receive the converted JSON file in SuperAnnotate format, you can simply upload your annotations in our editor. 
+:bulb: You can import annotations from previous or current desktop app versions.
 
-![Image4](images/image4.png)
-
-The SDK supports the conversion of the following formats from SuperAnotate (SA) and to SuperAnnotate (SA).
-
-| DATASET |TO SA | FROM SA |
-| :--- | :---: | :---: | 
-| [COCO](https://cocodataset.org/#home) | X | X |
-| [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) | X |  |
-| [LabelBox](https://labelbox.com/) | X | |
-| [Supervisely](https://supervise.ly/) | Coming soon | |
-| [DataLoop](https://dataloop.ai/) | Coming soon | |
-| [Cityscapes](https://www.cityscapes-dataset.com/) | Coming soon | |
-| [LabelMe](http://labelme.csail.mit.edu/Release3.0/) | Coming soon | |
-| [YOLO darknet](https://pjreddie.com/darknet/) | Coming soon | |
-| [AWS SageMaker](https://aws.amazon.com/sagemaker/) | Coming soon | |
-| [Google Cloud AutoML](https://cloud.google.com/vision/automl/docs) | Coming soon | |
-| [VoTT](https://github.com/microsoft/VoTT) | Coming soon | |
-| [VGG](http://www.robots.ox.ac.uk/~vgg/software/via/) | Coming soon | |
-
+:bulb: Note that you can only upload SuperAnnotate format files, and that the uploaded annotations will overwrite your current annotations. 
+### Classes
+To import classes, select **Add a class** in the right panel and select Upload JSON. Next, choose a JSON file from your computer, and select **Open**.
 ## Export
+### Project 
 
-**Classes.json**
+1. Go to the homepage and click on the corresponding download icon. 
+2. Choose if you want to include images or annotations or both in your download. Note that you cannot download your project if you don’t check at least one box. 
+3. When you’re done, select **Export**.
+4. Choose the folder name and destination.
+5. Select **Export**.
 
-`classes.json` file contains all the information about the classes. Find an example below:
-
-```json
-[{
-	"id":1,
-	"project_id":0,
-	"name":"Class 1",
-	"color":"#32a852",
-	"attribute_groups":[{
-		"id":3, 
-		"class_id": 1, 
-		"name": 
-		"color_list", 
-		"attributes":[{
-			"id": 5, 
-			"group_id": 3, 
-			"name": "blue"
-			},{
-			"id": 6, 
-			"group_id": 3, 
-			"name": "red"}]
-	}]
-},{
-	"id":2,
-	"project_id":0,
-	"name":"Class 2",
-	"color":"#46b761",
-	"attribute_groups":[{
-		"id": 4, 
-		"class_id": 2, 
-		"name": "shape", 
-		"attributes":[{
-			"id":7, 
-			"group_id": 4, 
-			"name": "cube"
-			},{
-			"id":8, 
-			"group_id": 4, 
-			"name":"sphere"}]
-	}]
-}]
-```
-
-`annotations.json` file contains all the information regarding image annotation. There can be multiple types of annotations. Here are some examples:  
-
-```
-{
-	"01.jpg":[annotations_list_and_metadata],
-	“02.jpg”:[annotations_list_and_metadata]
-}		
-```
-
-Annotation types and their json structures:		
-
-**Box** 
-```json
-{
-	"attributes":[{"id": 3, "group_id": 4}],
-	"classId":1,
-	"groupId":0,
-	"locked":false,
-	"pointLabels":{},
-	"points":{
-		"x1":98.3,
-		"x2":300.5,
-		"y1":136.7,
-		"y2":362.9
-		},
-	"probability":100,
-	"type":"bbox",
-	"visible":true
-}
-```
-**Polygon**
-```json
-{
-	"attributes":[{"id": 5, "group_id": 6}],
-	"classId":2,
-	"groupId":0,
-	"locked":false,
-	"pointLabels":{},
-	"points":[
-		21.6, 242.2,
-		37.1, 193.3,
-		109.1, 209.3,
-		90.5, 254.5,
-		19.4, 243.0
-		],
-	"probability":100,
-	"type":"polygon",
-	"visible":true
-}
-```
-**Point**
-```json
-{
-	"type":"point",
-	"classId":-1,
-	"probability":100,
-	"x":123.1,
-	"y":289.7,
-	"groupId":0,
-	"pointLabels":{},
-	"locked":false,
-	"visible":true,
-	"Attributes":[{"id": 7, "group_id": 8}]
-}
-```
-**Polyline**
-```json
-{
-	"type":"polyline",
-	"classId":4,
-	"probability":100,
-	"points":[
-		13.1, 223.2,
-		49.1, 230.4,
-		154, 268.5,
-		580.9, 538
-		],
-	"groupId":0,
-	"pointLabels":{},
-	"locked":false,
-	"visible":true,
-	"attributes":[{"id": 9, "group_id": 10}]
-},
-```
-**Ellipse**
-```json
-{
-	"type":"ellipse",
-	"classId":3,
-	"probability":100,
-	"cx":365.3,
-	"cy":288.1,
-	"rx":334.6,
-	"ry":178.9,
-	"angle":0,
-	"groupId":0,
-	"pointLabels":{},
-	"locked":false,
-	"visible":true,
-	"attributes":[{"id": 11, "group_id": 12}]
-},
-```
-
-**Cuboid**
-```json
-{
-	"attributes":[{"id": 13, "group_id": 14}],
-	"classId":3,
-	"groupId":0,
-	"locked":false,
-	"pointLabels":{},
-	"points":{
-		"f1":{
-			"x":552.1,
-			"y":205.4
-			},
-		"f2":{
-			"x":646.0,
-			"y":826.9
-			},
-		"r1":{
-			"x":411.3,
-			"y":232.5
-			},
-		"r2":{
-			"x":505.2,
-			"y":854.0
-			}
-		},
-	"probability":100,
-	"type":"cuboid",
-	"visible":true
-}
-```
-
-
-
-## Relevant Posts and Reading Materials
-
-Some text description 
-
-- **[Python SDK Documentation](https://superannotate.readthedocs.io/en/latest/index.html)**
-- **[Detecting Mislabeled Annotations with Superannotate](https://github.com/superannotateai/qa-automation)**
-- **[Speed up image labeling using transfer learning (no code required)](https://blog.superannotate.com/speed-up-labeling-process-using-transfer-learning)**
-- **[How to efficiently manage work-from-home annotation service teams?](https://blog.superannotate.com/ai-annotation-during-covid-19)**
-- **[Active Learning using SuperAnnotate?](https://github.com/superannotateai/active_learning)**
-- **[Why Pixel Precision is the future of Image Annotate](https://blog.superannotate.com/why-pixel-precision-is-the-future-of-the-image-annotation)**
-- **[Full Documentation for SuperAnnotate Web](https://superannotate.com/documentation)**
-
-
-
+Your JSON files and images will be saved in the same ZIP folder. 
