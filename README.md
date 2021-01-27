@@ -8,7 +8,7 @@ You can create high-quality training datasets and annotations for computer visio
 ## What problem does it solve?
 SuperAnnotate Desktop accelerates data training by at least three times, without compromising the annotation quality. 
 ## Who is it for?
-SuperAnnotate Desktop is ideal for individual researchers and small annotation teams that aim to perform simple computer vision tasks. Use SuperAnnotate’s [b platform](https://app.superannotate.com/) to complete complex tasks, manage large teams, and view project analytics.
+SuperAnnotate Desktop is ideal for individual researchers and small annotation teams that aim to perform simple computer vision tasks. Use SuperAnnotate’s [web platform](https://app.superannotate.com/) to complete complex tasks, manage large teams, and view project analytics.
 ## How can I upgrade?
 SuperAnnotate’s [web platform](https://app.superannotate.com/) allows you to create high-quality annotations for top-performing computer vision models regardless of team and project size. It also allows you to set up projects and distribute tasks automatically, use neural networks to automate the annotation process, and integrate your computer vision pipeline using Python SDK. [Contact us](https://www.superannotate.com/contacts) to upgrade. 
 # Project
