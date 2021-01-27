@@ -138,32 +138,32 @@ The explanation will be based on this image:
 ![Example](images/IMG7.png)
 Each image has a corresponding JSON file with the following file name [IMAGE_NAME].json. 
 The JSON file contains three main fields:
-'''json
+```json
 {
     "metadata": {},
     "tags": [],
     "instances": []
 }
-'''
+```
 ### Metadata
-'''json
+```json
 {
     "version": "1.0.0",
     "name": "Untitled design (1).png",
     "status": "In progress"
 }
-'''
+```
 **Description:**
 * “version”: JSON version
 * “name”: Image name
 * “status”: Image status
 ### Tags
-'''json
+```json
 [
     "Shapes",
     "Figures"
 ]
-'''
+```
 **Description:**
 * “Shapes”: Tag name.
 * “Figures”: Tag name.
