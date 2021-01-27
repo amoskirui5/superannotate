@@ -20,7 +20,7 @@ SuperAnnotate’s [web platform](https://app.superannotate.com/) allows you to c
 4. When you’re done, select **Create**.
 ## Open project
 ![Openaproject](images/IMG3.png)
-You can work on existing projects in SuperAnnotate. Go to the homepage, click **Open project** in the bottom left corner, and select your project from your computer. 
+You can work on existing projects in SuperAnnotate. Go to the homepage, click **Open project** in the bottom left corner, and select the project from your computer. 
 ## Export project
 To export a project:
 
@@ -35,7 +35,7 @@ Your JSON files and images will be saved in the same ZIP folder.
 ![Removeaproject](images/IMG4.png)
 To remove a project from the list, go to the homepage, hover over the project you want to remove, and select **X**.
 
-:bulb: Removing a project from the list **does not** delete it from your computer. To open a project that you removed from the list, click **Open project** and select your project from your computer.
+:information_source: Removing a project from the list **does not** delete it from your computer. To open a project that you removed from the list, click **Open project** and select your project from your computer.
 # Editor
 ![Editor](images/IMG6.png)
 ## Annotations
@@ -48,9 +48,9 @@ Use these tools to annotate your projects. Choose the tool depending on the shap
 * Ellipse
 * Cuboid
 
-:bulb: Use the ruler as a guide while annotating, and zoom in on the object for better annotation results.
+:information_source: Use the ruler as a guide while annotating, and zoom in on the object for better annotation results.
 
-:bulb: SuperAnnotate automatically saves your progress.
+:information_source: SuperAnnotate automatically saves your progress.
 ### Adjust annotation
 Press **Esc** to delete the last point you added to your polygon and polyline.
 ### Delete annotation
@@ -58,7 +58,7 @@ Press **Esc** to delete the last point you added to your polygon and polyline.
 **Method 2:** Find the annotation in the right panel and click on the corresponding **X** button.
 To delete all the annotations from the image you’re working on, select **Revert** (trash icon) in the bottom panel or press **Ctrl+Shift+R** and confirm your action.
 
-:bulb: Select :question: to get access to keyboard shortcuts. 
+:information_source: Select :question: to get access to keyboard shortcuts. 
 # Classes
 ## Create a class
 **Method 1:**
@@ -76,8 +76,11 @@ To add an attribute group:
 3. Enter a name and choose a color.
 ## Assign class
 Use one of these methods to assign a class to an instance:
+
 **Method 1:** Right-click on an instance and choose a class from the drop-down menu.
+
 **Method 2:** Select an instance, find it in the right panel, and choose a class from the drop-down menu.
+
 **Method 3:** Select the **Eyedropper** tool, click on an object to sample its class. The **Eyedropper** tool will change into the **Bucket** tool. Next, select your unassigned object(s). The **Eyedropper** tool facilitates the class assignment of multiple objects.
 
 Alternatively, you can assign a class to your object before annotating it. Follow these steps: 
@@ -113,7 +116,9 @@ An image can have one of the following statuses:
 * Not started
 * In progress
 * Complete
+
 To set an image as **Complete**, select **Complete** at the bottom of the right panel. Note that you should classify all the instances to be able to set an image as **Complete**.
+
 To see the status of an image, go to the image panel and hover over the icon on the right. 
 ## Add tags
 1. Select **Tags** in the left panel.
@@ -135,6 +140,7 @@ You can also expand an instance in the right panel to see its attributes and poi
 # Import & Export
 ## Format
 The explanation will be based on this image:
+
 ![Example](images/IMG7.png)
 Each image has a corresponding JSON file with the following file name [IMAGE_NAME].json. 
 The JSON file contains three main fields:
